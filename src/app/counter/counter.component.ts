@@ -12,7 +12,9 @@ export class CounterComponent implements OnInit{
   counter:number = 0;
 
   ngOnInit(): void {
-    this.counter = parseInt(localStorage.getItem("counter")!)  || 0;
+    this.counter =(localStorage.getItem("counter")!=undefined) ?
+    parseInt(localStorage.getItem('counter')!):0;
+    
     console.log("creando componente");
   }
 
