@@ -231,8 +231,9 @@
     <div class="divider" role="separator" aria-label="Divider"></div>
     <div class="right-side">
       <div class="pill-group">
-        <app-counter></app-counter>
-        
+        <app-counter [title]=""></app-counter>
+        <div>total: {{counter}}</div>
+
         @for (item of [
           { title: 'Explore the Docs', link: 'https://angular.dev' },
           { title: 'Learn with Tutorials', link: 'https://angular.dev/tutorials' },

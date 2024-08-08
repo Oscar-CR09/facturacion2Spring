@@ -11,4 +11,17 @@ import { CounterComponent } from "./counter/counter.component";
 })
 export class AppComponent {
   title = 'facturacion-app';
+  subTitle = 'contador con estado de secion';
+
+  users:string[] = ['pepe','maria','juan'];
+
+  visible:boolean = false;
+
+  counter!:number;
+  
+  setVisible():void {
+    this.visible = this.visible ?false : true;
+
+    console.log("hemos hecho click en set Visible");
+  }
 }
